@@ -24,7 +24,11 @@ Linux/MacOs
     ```bash
     pip install -r requirements.txt
     ```
-
+## Setar a sua api key obtida em [text](https://console.cloud.google.com/)
+ - 1 - Vá ao seu console
+ - 2 - Crie um projeto
+ - 3 - Ative uma chave de api YouTube Data API v3
+ - 4 - Vá no arquivo main.js e adicione sua key em const YOUTUBE_API_KEY = ''
 
 ## Instalar nova lib:
     ```bash
