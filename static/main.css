@@ -1,0 +1,180 @@
+/* Geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e legível */
+    background-color: #f4f4f4; /* Fundo cinza claro suave */
+    color: #333; /* Texto cinza escuro */
+  }
+  
+  .container {
+    background-color: #fff; /* Fundo branco para o container principal */
+    padding: 30px;
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  h1, h2 {
+    color: #007bff; /* Cor azul primária do Bootstrap para os títulos */
+  }
+  
+  /* Formulário */
+  #searchForm {
+    display: flex;
+    gap: 10px; /* Espaçamento entre o input e o botão */
+  }
+  
+  #search_query {
+    flex-grow: 1; /* Input ocupa o espaço disponível */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Lista de vídeos */
+  #videoList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #videoList li {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Fundo cinza claríssimo para os itens da lista */
+  }
+  
+  /* Thumbnail */
+  #thumbnailContainer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Link de Download */
+  #downloadLinkContainer {
+    text-align: center;
+  }
+
+  /* Carousel */
+#searchResults .carousel-item img {
+  height: 300px; /* Ajuste a altura desejada para as imagens */
+  object-fit: cover; /* Garante que a imagem cubra toda a área */
+}
+
+#searchResults .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para a legenda */
+  bottom: 0; /* Posiciona a legenda na parte inferior */
+}
+
+/* Adicione este estilo no seu arquivo CSS */
+#searchResults {
+  height: 100%; /* Garante que todos os cards tenham a mesma altura */
+}
+
+/* Estilos para os cards */
+#searchResults .card {
+  height: 300px; /* Define a altura fixa desejada */
+  width: 250px; /* Define a largura fixa desejada */
+  display: flex;
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+#searchResults .card-body {
+  flex-grow: 1; /* Permite que o corpo do card ocupe o espaço restante */
+}
+
+#searchResults .card-img-top {
+  object-fit: cover; /* Ajusta a imagem para cobrir toda a área, mantendo a proporção */
+  height: 150px; /* Define a altura da imagem (opcional) */
+}
+
+
+.lds-roller,
+.lds-roller div,
+.lds-roller div:after {
+  box-sizing: border-box;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7.2px;
+  height: 7.2px;
+  border-radius: 50%;
+  background: currentColor;
+  margin: -3.6px 0 0 -3.6px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 62.62742px;
+  left: 62.62742px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 67.71281px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 70.90963px;
+  left: 48.28221px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 70.90963px;
+  left: 31.71779px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 67.71281px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 62.62742px;
+  left: 17.37258px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12.28719px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

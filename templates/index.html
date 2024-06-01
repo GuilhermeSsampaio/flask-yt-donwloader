@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../static/main.js"></script>
+    <link rel="stylesheet" href="../static/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+    <div class="container container-fluid mt-5 center">
+        <h1>Baixar músicas do YouTube</h1>
+        <form id="searchForm">
+            <input type="text" id="search_query" placeholder="Pesquise por músicas">
+            <button type="button" id="searchButton" class="btn btn-primary"> <svg xmlns="http://www.w3.org/2000/svg"
+                    width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </button>
+
+        </form>
+        <div class="container">
+            <div id="searchResults" class="row row-cols-1 row-cols-md-3 g-4"></div>
+        </div>
+
+        <h2 id ='msg' class="mt-3" >Aqui serão mostrados os vídeos que você deseja baixar!</h2>
+        <ul id="videoList">
+            
+        </ul>
+        <button id="downloadAll" class="btn btn-primary mt-3" style="display: none;">Baixar Todos</button>
+        <!-- Adicione este elemento em algum lugar do seu HTML -->
+        <div id="loading" style="display: none;">Carregando...
+            
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+
+        <div id="thumbnailContainer" class="">
+            <!-- <img id="img" width="600px" height="300px" src="" alt="Thumbnail do vídeo"> -->
+        </div>
+        <div id="downloadLinkContainer"></div>
+    </div>
+</body>
+
+</html>
